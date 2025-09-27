@@ -7,8 +7,8 @@ extension WidgetExtension on Widget{
     double? radius,
   }) => Center(
     child: CupertinoActivityIndicator(
-      color: color ?? whiteColor,
-      radius: radius ?? 10.0,
+      color: color ?? primaryColor,
+      radius: radius ?? 15.0,
     ),
   );
 

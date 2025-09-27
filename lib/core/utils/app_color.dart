@@ -1,9 +1,7 @@
 part of 'design_utils.dart';
 
-const Color scaffoldBackgroundColor = Color(0xFFE3D4CA);
-// const Color scaffoldBackgroundColor = Color(0xFFF9F9F9);
-const Color scaffoldAppBarColor = Color(0xFFE3D4CA);
-// const Color scaffoldAppBarColor = Colors.white;
+const Color scaffoldBackgroundColor = Colors.white;
+const Color scaffoldAppBarColor = Colors.white;
 
 const Color transparentColor = Colors.transparent;
 
@@ -16,32 +14,28 @@ const Color coreTextFieldShadowColor = Color(0xFFF1F1F1);
 
 const Color coreTextFieldDefaultIconColor = Color(0xFF9B9B9B);
 
-const Color coreTextFieldCursorColor = Color(0xFFDB3022);
+const Color coreTextFieldCursorColor = Color(0xFF1B6EF7);
 
 const Color whiteColor = Colors.white;
 
-const primaryTextColor = Color(0xFF222222);
+const primaryTextColor = Color(0xFF2D2D2D);
 
-const secondaryTextColor = Color(0xFF9B9B9B);
+const secondaryTextColor = Color(0xFF636F85);
 
 /// Shimmer color
  Color shimmerBaseColor = Colors.grey.shade300;
  Color shimmerHighlightColor = Colors.grey.shade100;
 
-const Color primaryColor = Color(0xFF704F38);
-const Color secondaryColor = Color(0xFFC5AD9C);
+const Color primaryColor = Color(0xFF1B6EF7);
+Color secondaryColor = primaryColor.withValues(alpha: 0.5);
 
 Color primaryShadowColor = primaryColor.withValues(alpha: 0.3);
-
-const Color masterCardColorOne = Color(0xFFEB001B);
-const Color masterCardColorTwo = Color(0xFFF79E1B);
-const Color masterCardColorThree = Color(0xFFD29634);
 
 const Color defaultBorderColorOne = Color(0xFF222222);
 
 const Color defaultCardColorOne = Color(0xFFFFFFFF);
 
-const Color gradientStartColor = Color(0xFF704F38);
+const Color gradientStartColor = Color(0xFF1B6EF7);
 Color gradientEndColor = gradientStartColor.withValues(alpha:0.5);
 
 const errorColor = Color(0xFF9B9B9B);
@@ -58,7 +52,7 @@ const Color coreTextFieldTitleColorForDarkMode = Color(0xFF515151);
 const Color borderColor = Color(0xFFACACAC);
 
 /// Core Button Colors
-const Color buttonPrimaryColor = Color(0xFFDB3022);
+const Color buttonPrimaryColor = Color(0xFF1B6EF7);
 const Color buttonDisableColor = Color(0xFFE1E0E0);
 
 /// Button fill color
