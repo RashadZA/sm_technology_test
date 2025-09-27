@@ -57,7 +57,7 @@ class SignInScreen extends GetWidget<SignInScreenController> {
                 CoreTextField(
                   titleText: "Email Address",
                   hintText: "example@gmail.com",
-                  keyboardType: TextInputType.text,
+                  keyboardType: TextInputType.emailAddress,
                   controller: controller.emailTextEditController,
                   prefixIcon: Icons.email_rounded,
                   validator: (value)=> AppValidators.emailValidator(value),

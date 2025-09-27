@@ -8,5 +8,6 @@ class AppImages {
   static const String onboardingSecondImageTwo = "assets/onboardingSecond.png";
   static const String signInIcon = "assets/signInIcon.png";
   static const String successIcon = "assets/successIcon.png";
+  static const String verifyCodeSuccessIcon = "assets/verifyCodeSuccessIcon.png";
 
 }

@@ -36,7 +36,7 @@ class IconCustomButton extends StatelessWidget {
           shape: BoxShape.circle,
           border: Border.all(
             color: secondaryBorderColor,
-            width: borderWidth ?? 2,
+            width: borderWidth ?? 1,
           )
         ),
         child: Icon(

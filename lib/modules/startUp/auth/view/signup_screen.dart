@@ -64,7 +64,7 @@ class SignUpScreen extends GetWidget<SignUpScreenController> {
                   CoreTextField(
                     titleText: "Email Address",
                     hintText: "example@gmail.com",
-                    keyboardType: TextInputType.text,
+                    keyboardType: TextInputType.emailAddress,
                     textInputAction: TextInputAction.next,
                     controller: controller.emailTextEditController,
                     prefixIcon: Icons.email_rounded,

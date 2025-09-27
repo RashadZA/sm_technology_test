@@ -39,16 +39,13 @@ class SignUpScreenController extends GetxController {
           surfaceTintColor: Colors.transparent,
           child: Obx(()=>SuccessPopupWidget(
             isLoading: successPopupContinueButtonIsTapped.value,
-            successPopupClosedIconOnPressedMethod: () => Get.offNamed(Routes.signInScreen),
-            successPopupContinueButtonOnPressedMethod: () => Get.offNamed(Routes.signInScreen),
+            successPopupClosedIconOnPressedMethod: () => Get.offAllNamed(Routes.signInScreen),
+            successPopupContinueButtonOnPressedMethod: () => Get.offAllNamed(Routes.signInScreen),
           ),
           ),
         ),
       );
     }
-  }
-  Future<void> successPopupContinueButtonOnPressedMethod() async {
-    // Get.offAllNamed(Routes.mainScreen);
   }
 
 
