@@ -9,6 +9,7 @@ const Color cardColor = Colors.white;
  Color cardShadowColor = Colors.grey.withValues(alpha: 0.3);
 
 const Color coreTextFieldBackgroundColor = Colors.white;
+const Color coreTextFieldBorderColor = Color(0xFFC94A3B8);
 
 const Color coreTextFieldShadowColor = Color(0xFFF1F1F1);
 

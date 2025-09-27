@@ -65,22 +65,22 @@ class CoreTextField extends StatelessWidget {
   });
 
   static OutlineInputBorder focusedBorder = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(16),
+    borderRadius: BorderRadius.circular(50),
     borderSide:
-        BorderSide(width: 0, color: coreTextFieldBackgroundColor.withValues(alpha:.67),),
+        BorderSide(width: 0, color: coreTextFieldBorderColor.withValues(alpha:.67),),
   );
 
   static OutlineInputBorder enabledBorder = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(16),
-    borderSide: const BorderSide(width: 0, color: coreTextFieldBackgroundColor,),
+    borderRadius: BorderRadius.circular(50),
+    borderSide: const BorderSide(width: 0, color: coreTextFieldBorderColor,),
   );
 
   static OutlineInputBorder focusedErrorBorder = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(16),
-    borderSide: const BorderSide(width: 0, color: coreTextFieldBackgroundColor),
+    borderRadius: BorderRadius.circular(50),
+    borderSide: const BorderSide(width: 0, color: coreTextFieldBorderColor),
   );
   static OutlineInputBorder errorBorder = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(16),
+    borderRadius: BorderRadius.circular(50),
     borderSide:
         const BorderSide(width: 1, color: redAccentColor,),
   );
@@ -94,12 +94,11 @@ class CoreTextField extends StatelessWidget {
         Text(
           titleText,
           style: titleTextStyle ?? AppTextTheme.text16.copyWith(
-              color: primaryColor,
-              fontWeight: FontWeight.w600
+              color: primaryTextColor,
           ),
         ),
         const SizedBox(
-          height: 2,
+          height: 8,
         ),
         ClipRRect(
           borderRadius: BorderRadius.circular(16),
@@ -138,7 +137,7 @@ class CoreTextField extends StatelessWidget {
                   color: hintTextColor ?? secondaryTextColor,
                 ),
                 filled: true,
-                contentPadding: contentPadding ?? EdgeInsets.symmetric(horizontal: 16, vertical: prefixIcon == null && suffixIcon == null ? 12 : 8),
+                contentPadding: contentPadding ?? EdgeInsets.symmetric(horizontal: 16, vertical: prefixIcon == null && suffixIcon == null ? 20 : 16),
                 fillColor: fillColor ?? coreTextFieldBackgroundColor,
                 prefixIcon: prefixIcon != null
                     ? Icon(

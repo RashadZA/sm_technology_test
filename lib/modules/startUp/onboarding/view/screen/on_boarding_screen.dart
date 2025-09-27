@@ -16,6 +16,7 @@ class OnBoardingScreen extends GetWidget<OnBoardingScreenController> {
             width: Get.width,
             height: Get.height,
             child: ListView(
+              padding: EdgeInsets.only(bottom: 40),
               children: [
                 SizedBox(
                   width: Get.width,

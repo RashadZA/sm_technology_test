@@ -1,3 +1,4 @@
+import 'package:sm_technology_test/core/routes/app_pages.dart';
 import 'package:sm_technology_test/core/utils/design_utils.dart';
 import 'package:sm_technology_test/modules/startUp/onboarding/view/widgets/on_boarding_screen_first_widget.dart';
 import 'package:sm_technology_test/modules/startUp/onboarding/view/widgets/on_boarding_screen_second_widget.dart';
@@ -39,7 +40,7 @@ class OnBoardingScreenController extends GetxController{
         curve: Curves.easeInOut,
       );
     } else {
-
+      Get.offAllNamed(Routes.signInScreen);
     }
     update();
   }
