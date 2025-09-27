@@ -24,13 +24,8 @@ class SplashScreenController extends GetxController with GetSingleTickerProvider
       ),
     );
     animationController.forward();
-
-    // Precache images when the screen builds
-    precacheImage(const AssetImage(AppImages.welcomeScreenImageOne), Get.context!);
-    precacheImage(const AssetImage(AppImages.welcomeScreenImageTwo), Get.context!);
-    precacheImage(const AssetImage(AppImages.welcomeScreenImageThree), Get.context!);
-    Timer(const Duration(seconds: 3), () {
-      // Get.offAllNamed(Routes.welcomeScreen);
+    Timer(const Duration(seconds: 2), () {
+      Get.offAllNamed(Routes.onBoardingScreen);
     });
   }
 

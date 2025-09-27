@@ -4,7 +4,6 @@ abstract class Routes {
   Routes._();
   static const unknown404 = _Paths.unknown404;
   static const splashScreen = _Paths.splashScreen;
-  static const welcomeScreen = _Paths.welcomeScreen;
   static const onBoardingScreen = _Paths.onBoardingScreen;
   static const signInScreen = _Paths.signInScreen;
   static const forgotScreen = _Paths.forgotScreen;
@@ -35,7 +34,6 @@ abstract class Routes {
 abstract class _Paths {
   static const unknown404 = '/404';
   static const splashScreen = '/splashScreen';
-  static const welcomeScreen = '/welcomeScreen';
   static const onBoardingScreen = '/onBoardingScreen';
   static const forgotScreen = '/forgotScreen';
   static const signInScreen = '/signInScreen';
