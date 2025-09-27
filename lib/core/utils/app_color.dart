@@ -55,6 +55,7 @@ const Color borderColor = Color(0xFFACACAC);
 
 /// Core Button Colors
 const Color buttonPrimaryColor = Color(0xFF1B6EF7);
+const Color buttonSecondaryColor = Color(0xFFF6F6F6);
 const Color buttonDisableColor = Color(0xFFE1E0E0);
 
 /// Button fill color

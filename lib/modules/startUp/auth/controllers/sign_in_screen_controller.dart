@@ -7,9 +7,8 @@ class SignInScreenController extends GetxController{
 
   final GlobalKey<FormState> fromStateKey = GlobalKey<FormState>();
 
-  final TextEditingController nameTextEditController = TextEditingController();
-  final TextEditingController emailTextEditController = TextEditingController();
-  final TextEditingController passwordTextEditController = TextEditingController();
+  final TextEditingController emailTextEditController = TextEditingController(text: "a@gmail.com");
+  final TextEditingController passwordTextEditController = TextEditingController(text: "123456");
 
   RxBool obscureTextStatus = true.obs;
   RxBool rememberMeStatus = true.obs;
@@ -27,7 +26,7 @@ class SignInScreenController extends GetxController{
     if(!fromStateKey.currentState!.validate()){
       "Please fill up required filled".infoSnackBar();
     } else {
-      // Get.offNamed(Routes.mainScreen);
+      Get.offNamed(Routes.locationAccessScreen);
     }
   }
 

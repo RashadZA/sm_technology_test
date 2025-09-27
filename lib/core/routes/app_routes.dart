@@ -10,6 +10,8 @@ abstract class Routes {
   static const signUpScreen = _Paths.signUpScreen;
   static const verifyCodeScreen = _Paths.verifyCodeScreen;
   static const newPasswordScreen = _Paths.newPasswordScreen;
+  static const locationAccessScreen = _Paths.locationAccessScreen;
+  static const languageScreen = _Paths.languageScreen;
   static const mainScreen = _Paths.mainScreen;
   static const homeScreen = _Paths.homeScreen;
   static const shopScreen = _Paths.shopScreen;
@@ -40,6 +42,8 @@ abstract class _Paths {
   static const signUpScreen = '/signUpScreen';
   static const verifyCodeScreen = '/verifyCodeScreen';
   static const newPasswordScreen = '/newPasswordScreen';
+  static const locationAccessScreen = '/locationAccessScreen';
+  static const languageScreen = '/languageScreen';
   static const mainScreen = '/mainScreen';
   static const homeScreen = '/homeScreen';
   static const shopScreen = '/shopScreen';

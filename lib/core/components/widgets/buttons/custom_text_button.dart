@@ -3,7 +3,7 @@ import 'package:sm_technology_test/core/utils/design_utils.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextButton extends StatelessWidget {
-  final String buttonText;
+  final String? buttonText;
   final bool isButtonIsTapped;
   final Color? buttonColor;
   final Color? buttonTextColor;
@@ -27,7 +27,7 @@ class CustomTextButton extends StatelessWidget {
 
   const CustomTextButton({
     super.key,
-    required this.buttonText,
+    this.buttonText,
     required this.isButtonIsTapped,
     this.buttonColor,
     this.buttonTextColor,
@@ -87,7 +87,7 @@ class CustomTextButton extends StatelessWidget {
                 value: defaultLoaderValue,
               )
           ) : (buttonWidget ?? Text(
-            buttonText,
+            buttonText ?? "",
             textAlign: buttonTextAlign ?? TextAlign.center,
             style: buttonTextStyle ?? AppTextTheme.text16.copyWith(
               color: buttonTextColor ?? whiteColor,

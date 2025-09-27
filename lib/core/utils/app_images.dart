@@ -9,5 +9,6 @@ class AppImages {
   static const String signInIcon = "assets/signInIcon.png";
   static const String successIcon = "assets/successIcon.png";
   static const String verifyCodeSuccessIcon = "assets/verifyCodeSuccessIcon.png";
+  static const String mapIcon = "assets/Maps.png";
 
 }
