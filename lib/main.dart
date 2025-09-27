@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return  GetMaterialApp(
       title: "SM Technology Test",
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.splashScreen,
+      initialRoute: Routes.signInScreen,
       getPages: AppPages.routes,
       initialBinding: BindingsX.initialBindigs(),
       theme: AppTheme.lightTheme,

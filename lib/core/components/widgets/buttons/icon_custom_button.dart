@@ -1,11 +1,12 @@
 import 'package:sm_technology_test/core/components/widgets/buttons/core_button.dart';
 import 'package:flutter/material.dart';
+import 'package:sm_technology_test/core/utils/design_utils.dart';
 
 class IconCustomButton extends StatelessWidget {
   final double? iconSize;
   final double? containerWidth;
   final double? containerHeight;
-  final double? elevation;
+  final double? borderWidth;
   final IconData iconData;
   final Color iconColor;
   final Color? backgroundColor;
@@ -18,7 +19,7 @@ class IconCustomButton extends StatelessWidget {
     this.onPressed,
     this.containerWidth,
     this.containerHeight,
-    this.elevation,
+    this.borderWidth,
     this.iconSize,
     this.backgroundColor,
   });
@@ -27,24 +28,23 @@ class IconCustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CoreButton(
       onPressed: onPressed,
-      child: Card(
-        elevation: elevation ?? 3,
-        color: backgroundColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(50),
+      child: Container(
+        width: containerWidth ?? 50,
+        height: containerHeight ?? 50,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(
+            color: secondaryBorderColor,
+            width: borderWidth ?? 2,
+          )
         ),
-        child: SizedBox(
-          width: containerWidth ?? 50,
-          height: containerHeight ?? 50,
-          child: Center(
-            child: Icon(
-              // selectedStatus ? Icons.favorite : Icons.favorite_border,
-              iconData,
-              size: iconSize ?? 25,
-              color: iconColor,
-              // color: selectedStatus ? primaryColor : blackColor,
-            ),
-          ),
+        child: Icon(
+          // selectedStatus ? Icons.favorite : Icons.favorite_border,
+          iconData,
+          size: iconSize ?? 25,
+          color: iconColor,
+          // color: selectedStatus ? primaryColor : blackColor,
         ),
       ),
     );

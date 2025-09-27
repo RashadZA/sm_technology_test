@@ -2,7 +2,9 @@ import 'package:sm_technology_test/core/API/service/api_repositories.dart';
 import 'package:get/get.dart';
 import 'package:sm_technology_test/core/components/widgets/unknown_route_screen.dart';
 import 'package:sm_technology_test/modules/startUp/auth/controllers/sign_in_screen_controller.dart';
+import 'package:sm_technology_test/modules/startUp/auth/controllers/sign_up_screen_controller.dart';
 import 'package:sm_technology_test/modules/startUp/auth/view/sign_in_screen.dart';
+import 'package:sm_technology_test/modules/startUp/auth/view/signup_screen.dart';
 import 'package:sm_technology_test/modules/startUp/onboarding/controller/on_boarding_screen_controller.dart';
 import 'package:sm_technology_test/modules/startUp/onboarding/view/screen/on_boarding_screen.dart';
 import 'package:sm_technology_test/modules/startUp/splash/splash_screen.dart';
@@ -40,6 +42,15 @@ class AppPages {
       transitionDuration: const Duration(milliseconds: 300),
       binding: BindingsBuilder(
             () => Get.lazyPut<SignInScreenController>(() => SignInScreenController()),
+      ),
+    ),
+    GetPage(
+      name: Routes.signUpScreen,
+      page: () => const SignUpScreen(),
+      transition: Transition.rightToLeft, // Open from right to left
+      transitionDuration: const Duration(milliseconds: 300),
+      binding: BindingsBuilder(
+            () => Get.lazyPut<SignUpScreenController>(() => SignUpScreenController()),
       ),
     ),
   ];

@@ -1,8 +1,12 @@
 import 'package:sm_technology_test/core/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sm_technology_test/core/utils/design_utils.dart';
 
 class SignInScreenController extends GetxController{
+
+  final GlobalKey<FormState> fromStateKey = GlobalKey<FormState>();
+
   final TextEditingController nameTextEditController = TextEditingController();
   final TextEditingController emailTextEditController = TextEditingController();
   final TextEditingController passwordTextEditController = TextEditingController();
@@ -20,12 +24,16 @@ class SignInScreenController extends GetxController{
 
   /// Sign In  button on pressed method
   Future<void> signInOnPressedMethod() async {
-    Get.offNamed(Routes.mainScreen);
+    if(!fromStateKey.currentState!.validate()){
+      "Please fill up required filled".infoSnackBar();
+    } else {
+      // Get.offNamed(Routes.mainScreen);
+    }
   }
 
   /// Create account  button on pressed method
   Future<void> createAccountOnPressedMethod() async {
-    Get.offNamed(Routes.signUpScreen);
+    Get.toNamed(Routes.signUpScreen);
   }
 
   Future<void> passwordFieldObscureStatusChangeMethod() async {

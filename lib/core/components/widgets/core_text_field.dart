@@ -67,17 +67,17 @@ class CoreTextField extends StatelessWidget {
   static OutlineInputBorder focusedBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(50),
     borderSide:
-        BorderSide(width: 0, color: coreTextFieldBorderColor.withValues(alpha:.67),),
+        BorderSide(width: 0, color: primaryBorderColor.withValues(alpha:.67),),
   );
 
   static OutlineInputBorder enabledBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(50),
-    borderSide: const BorderSide(width: 0, color: coreTextFieldBorderColor,),
+    borderSide: const BorderSide(width: 0, color: primaryBorderColor,),
   );
 
   static OutlineInputBorder focusedErrorBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(50),
-    borderSide: const BorderSide(width: 0, color: coreTextFieldBorderColor),
+    borderSide: const BorderSide(width: 0, color: primaryBorderColor),
   );
   static OutlineInputBorder errorBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(50),

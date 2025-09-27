@@ -15,3 +15,4 @@ part 'app_default_values.dart';
 part 'app_theme.dart';
 part 'app_common_methods.dart';
 part 'app_images.dart';
+part 'app_validators.dart';
