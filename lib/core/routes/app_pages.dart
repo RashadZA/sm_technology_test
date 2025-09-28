@@ -5,6 +5,8 @@ import 'package:sm_technology_test/modules/languageAndLocation/controllers/langu
 import 'package:sm_technology_test/modules/languageAndLocation/controllers/location_access_screen_controller.dart';
 import 'package:sm_technology_test/modules/languageAndLocation/view/language_screen.dart';
 import 'package:sm_technology_test/modules/languageAndLocation/view/location_access_screen.dart';
+import 'package:sm_technology_test/modules/main/controller/friends_controller.dart';
+import 'package:sm_technology_test/modules/main/view/friends_view.dart';
 import 'package:sm_technology_test/modules/startUp/auth/controllers/forgot_password_screen_controller.dart';
 import 'package:sm_technology_test/modules/startUp/auth/controllers/new_password_screen_controller.dart';
 import 'package:sm_technology_test/modules/startUp/auth/controllers/sign_in_screen_controller.dart';
@@ -108,6 +110,15 @@ class AppPages {
             () => Get.lazyPut<LanguageScreenController>(() => LanguageScreenController()),
       ),
     ),
+    GetPage(
+      name: Routes.mainScreen,
+      page: () => const Friends(),
+      transition: Transition.rightToLeft, // Open from right to left
+      transitionDuration: const Duration(milliseconds: 300),
+      binding: BindingsBuilder(
+            () => Get.lazyPut<FriendsController>(() => FriendsController()),
+      ),
+    ),
   ];
 
 }
@@ -116,6 +127,7 @@ class BindingsX {
   static BindingsBuilder initialBindigs() {
     return BindingsBuilder(() {
       Get.lazyPut<APIRepository>(() => APIRepository(), fenix: true);
+      Get.lazyPut<FriendsController>(() => FriendsController(), fenix: true);
     });
   }
 }

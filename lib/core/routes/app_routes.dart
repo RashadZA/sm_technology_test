@@ -13,24 +13,6 @@ abstract class Routes {
   static const locationAccessScreen = _Paths.locationAccessScreen;
   static const languageScreen = _Paths.languageScreen;
   static const mainScreen = _Paths.mainScreen;
-  static const homeScreen = _Paths.homeScreen;
-  static const shopScreen = _Paths.shopScreen;
-  static const bagScreen = _Paths.bagScreen;
-  static const favoritesScreen = _Paths.favoritesScreen;
-  static const profileScreen = _Paths.profileScreen;
-  static const myOrdersScreen = _Paths.myOrdersScreen;
-  static const orderDetailsScreen = _Paths.orderDetailsScreen;
-  static const settingScreen = _Paths.settingScreen;
-  static const checkOutScreen = _Paths.checkOutScreen;
-  static const shippingAddressesScreen = _Paths.shippingAddressesScreen;
-  static const addShippingAddressesScreen = _Paths.addShippingAddressesScreen;
-  static const promoCodesScreen = _Paths.promoCodesScreen;
-  static const paymentMethodScreen = _Paths.paymentMethodScreen;
-  static const productDetailsScreen = _Paths.productDetailsScreen;
-  static const homeSeeAllItemsScreen = _Paths.homeSeeAllItemsScreen;
-  static const productRatingAndReviewScreen = _Paths.productRatingAndReviewScreen;
-  static const shopCatalogScreen = _Paths.shopCatalogScreen;
-  static const filterScreen = _Paths.filterScreen;
 }
 
 abstract class _Paths {

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:get/get.dart';
+import 'package:sm_technology_test/core/routes/app_pages.dart';
 import 'package:sm_technology_test/core/utils/demo_data.dart';
 import 'package:sm_technology_test/core/utils/design_utils.dart';
 import 'package:sm_technology_test/modules/languageAndLocation/models/language_response_model.dart';
@@ -40,7 +41,7 @@ class LanguageScreenController extends GetxController {
     if(languageScreenDataOnProcessing.value){
       "Please wait".infoSnackBar();
     } else{
-      // Get.toNamed(Routes.signUpScreen);
+      Get.toNamed(Routes.mainScreen);
     }
   }
   Future<void> selectedButtonOnPressedMethod(LanguageDataModel language) async {

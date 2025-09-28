@@ -59,12 +59,8 @@ const Color buttonSecondaryColor = Color(0xFFF6F6F6);
 const Color buttonDisableColor = Color(0xFFE1E0E0);
 
 /// Button fill color
-// Color buttonFillColorForLightMode = const Color(0xFF000000).withOpacity(0.05);
-// Color buttonFillColorForDarkMode = const Color(0xFF000000).withOpacity(0.05);
 Color buttonFillColorForLightMode = const Color(0xFFF2F2F2);
 Color buttonFillColorForDarkMode = Colors.grey.withValues(alpha: 0.3);
-// Color disableButtonFillColorForLightMode = const Color(0xFF000000).withOpacity(0.15);
-// Color disableButtonFillColorForDarkMode = const Color(0xFF000000).withOpacity(0.15);
 Color disableButtonFillColorForLightMode = const Color(0xFFD9D9D9);
 Color disableButtonFillColorForDarkMode =  Colors.grey.withValues(alpha: 0.2);
 Color buttonFillSecondaryColorForLightMode = const Color(0xFF000000).withValues(alpha: 0.1);
